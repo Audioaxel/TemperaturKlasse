@@ -1,0 +1,15 @@
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.csproj.AssemblyReference.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.AssemblyInfoInputs.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.AssemblyInfo.cs
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.csproj.CoreCompileInputs.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\bin\Debug\net6.0\Test01.exe
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\bin\Debug\net6.0\Test01.deps.json
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\bin\Debug\net6.0\Test01.runtimeconfig.json
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\bin\Debug\net6.0\Test01.dll
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\bin\Debug\net6.0\Test01.pdb
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.dll
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\refint\Test01.dll
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.pdb
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\Test01.genruntimeconfig.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\Test01\obj\Debug\net6.0\ref\Test01.dll
