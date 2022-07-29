@@ -5,17 +5,34 @@ namespace Test01
     class Temperatur
     {
         // Variables
-        public float celsius = 20.0f;
+        float celsius = 20.0f;
 
         // Constructor
-        public Temperatur(float _celsius)
+        public Temperatur()
         {
-            celsius = _celsius;
+            
         }
         
-        // Methode
+        // Methodes
+        public void changeInitTemperature(float _InitTemperature){
+            celsius = _InitTemperature;
+        }
+        
+        
+        public void changeTemperature(bool _increase)
+        {
+            
+            if (_increase == true){
+                celsius = celsius + 1.0f;
+            }
+            else{
+                celsius = celsius - 1.0f;
+            }
+        }
+
         public void Result()
         {
+
             Console.WriteLine("Rechne jetzt...");
             Console.WriteLine("celsius: " + celsius);
             Console.WriteLine("kelvin: " + (celsius * 1.8 + 32));
@@ -34,9 +51,7 @@ namespace Test01
         // Klasse mit 20 Grad instanzieren?
         
         string input01;
-        float defaultTemperature = 20.0f;
-        
-
+        Temperatur temp01 = new Temperatur();   
 
         Console.WriteLine("Jo Bruder! Soll deine Temperatur Klasse mit 20° instanziert werden?\nDann tippe: y und bestätige mit ENTER");
         input01 = Console.ReadLine();
@@ -54,36 +69,31 @@ namespace Test01
             while(success == false){
                 Console.WriteLine("Ach Junge, gib Float\nBITTE");
                 success = Single.TryParse( Console.ReadLine(), out result);
+                if (success == true){
+                    temp01.changeInitTemperature(result);
+                }
         }
-        
-        defaultTemperature = result;
         
     
        }
        
-        Temperatur temp01 = new Temperatur(defaultTemperature);
         temp01.Result();
-
-
         Console.WriteLine("---------------");
         Console.WriteLine("Wennu jetzt erhöhen willst, tippe q\nverringern mit e \nexit für Beenden");
         Console.WriteLine("---------------");
         input01 = Console.ReadLine();
         
-        
-        float newTemp = defaultTemperature;
 
         while (input01 != "exit"){
             
             if (input01 == "q"){
-                temp01.celsius = newTemp + 1.0f;
-                newTemp = temp01.celsius;
+                
+                temp01.changeTemperature(true);
                 temp01.Result();
                 input01 = Console.ReadLine();
 
             } else if (input01 == "e"){
-                temp01.celsius = newTemp - 1.0f;
-                newTemp = temp01.celsius;
+                temp01.changeTemperature(false);
                 temp01.Result();
                 input01 = Console.ReadLine();
             } else{
@@ -92,9 +102,7 @@ namespace Test01
             }
             
         }
-        
-        
-        
+         
         // Wait before closing
         Console.ReadKey();
         }
