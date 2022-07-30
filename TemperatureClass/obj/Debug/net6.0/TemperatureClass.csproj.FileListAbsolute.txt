@@ -1,0 +1,15 @@
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\bin\Debug\net6.0\TemperatureClass.exe
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\bin\Debug\net6.0\TemperatureClass.deps.json
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\bin\Debug\net6.0\TemperatureClass.runtimeconfig.json
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\bin\Debug\net6.0\TemperatureClass.dll
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\bin\Debug\net6.0\TemperatureClass.pdb
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.csproj.AssemblyReference.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.AssemblyInfoInputs.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.AssemblyInfo.cs
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.csproj.CoreCompileInputs.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.dll
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\refint\TemperatureClass.dll
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.pdb
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\TemperatureClass.genruntimeconfig.cache
+C:\Users\aurgi\Desktop\Projekte\VisualCode\TemperatureClass\obj\Debug\net6.0\ref\TemperatureClass.dll
