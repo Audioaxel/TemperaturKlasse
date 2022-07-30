@@ -11,11 +11,12 @@ namespace Test01
         public float Fahrenheit {get; private set; } = 293.15f;
         
         ///
+        /// Change default temperature type
         /// int = 0 Celsius (default); int = 1 Kelvin; int = 2 Fahrenheit
         ///
         int _temperaturType = 0;
         ///
-        /// ChangeTemperature
+        /// Increase or decrease temperature value
         ///
         float changeTemp = 1f;
 
@@ -28,7 +29,7 @@ namespace Test01
         // ----- Methodes -----
         
         ///
-        /// Change the initial values
+        /// Change the initial temperature type
         /// Int 0 = Celsius; Int 1 = Kelvin; Int 2 = Fahrenheit
         ///
         public void changeInitValues(int tempType, float newTemp){
