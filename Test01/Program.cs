@@ -11,7 +11,7 @@ namespace Test01
         public float Fahrenheit {get; private set; } = 293.15f;
         
         ///
-        /// int = 0 _temperatur (default); int = 1 Kelvin; int = 2 Fahrenheit
+        /// int = 0 Celsius (default); int = 1 Kelvin; int = 2 Fahrenheit
         ///
         int _temperaturType = 0;
         ///
