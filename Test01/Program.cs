@@ -29,7 +29,7 @@ namespace Test01
         // ----- Methodes -----
         
         ///
-        /// Change the initial temperature type
+        /// Change the initial temperature type & initial temperature
         /// Int 0 = Celsius; Int 1 = Kelvin; Int 2 = Fahrenheit
         ///
         public void changeInitValues(int tempType, float newTemp){
@@ -42,14 +42,18 @@ namespace Test01
                     break;
                 case 1:
                     Kelvin  = newTemp;
+                    changeTemp = 0f;
+                    calcTemp();
+                    changeTemp = 1f;
                     break;
                 case 2:
                     Fahrenheit = newTemp;
+                    changeTemp = 0f;
+                    calcTemp();
+                    changeTemp = 1f;
                     break;
             }
-            changeTemp = 0f;
-            calcTemp();
-            changeTemp = 1f;
+            
 
         }
         
