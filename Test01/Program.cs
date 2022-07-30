@@ -4,40 +4,106 @@ namespace Test01
 {
     class Temperatur
     {
-        // Variables
-        float celsius = 20.0f;
+        // ----- Variables -----
+        
+        public float Celsius {get; private set; } = 20f;
+        public float Kelvin {get; private set; } = 68f;
+        public float Fahrenheit {get; private set; } = 293.15f;
+        
+        ///
+        /// int = 0 _temperatur (default); int = 1 Kelvin; int = 2 Fahrenheit
+        ///
+        int _temperaturType = 0;
+        ///
+        /// ChangeTemperature
+        ///
+        float changeTemp = 1f;
 
-        // Constructor
+        // ----- Constructor -----
         public Temperatur()
         {
+           
+        }
+        
+        // ----- Methodes -----
+        
+        ///
+        /// Change the initial values
+        /// Int 0 = Celsius; Int 1 = Kelvin; Int 2 = Fahrenheit
+        ///
+        public void changeInitValues(int tempType, float newTemp){
             
-        }
-        
-        // Methodes
-        public void changeInitTemperature(float _InitTemperature){
-            celsius = _InitTemperature;
-        }
-        
-        
-        public void changeTemperature(bool _increase)
-        {
-            
-            if (_increase == true){
-                celsius = celsius + 1.0f;
-            }
-            else{
-                celsius = celsius - 1.0f;
-            }
-        }
 
+            _temperaturType = tempType;
+            switch (tempType){
+                case 0:
+                    Celsius = newTemp;
+                    break;
+                case 1:
+                    Kelvin  = newTemp;
+                    break;
+                case 2:
+                    Fahrenheit = newTemp;
+                    break;
+            }
+            changeTemp = 0f;
+            calcTemp();
+            changeTemp = 1f;
+
+        }
+        
+        ///
+        /// Change the Temperature depend on initial values
+        ///
+        public void changeTemperature(bool _decrease)
+        {
+            changeTemp = System.Math.Abs(changeTemp);
+            if (_decrease){
+                changeTemp = changeTemp * -1;
+            }
+            calcTemp();
+        }
+        
+        ///
+        /// Print result to console
+        ///
         public void Result()
         {
 
             Console.WriteLine("Rechne jetzt...");
-            Console.WriteLine("celsius: " + celsius);
-            Console.WriteLine("kelvin: " + (celsius * 1.8 + 32));
-            Console.WriteLine("fahrenheit: " + (celsius + 273.15));
+            Console.WriteLine("Celsuis: " + Celsius);
+            Console.WriteLine("kelvin: " + Kelvin);
+            Console.WriteLine("fahrenheit: " + Fahrenheit);
         }
+        // ----- Private Methodes -----
+
+        ///
+        /// Calculate new Temperature depend on "changeTemp"
+        private void calcTemp(){
+            switch(_temperaturType){
+                case 0:
+                Celsius = (Celsius + changeTemp);
+                Fahrenheit = (Celsius * 1.8f + 32f);
+                Kelvin = (Celsius + 273.15f);
+                break;
+
+                case 1:
+                Kelvin = (Kelvin + changeTemp);
+                Celsius = (Kelvin - 273.15f);
+                Fahrenheit = (Celsius * 1.8f + 273.15f);
+                break;
+
+                case 2:
+                Fahrenheit = (Fahrenheit + changeTemp);
+                Celsius = (Fahrenheit / 1.8f - 32f);
+                Kelvin = (Celsius + 273.15f);
+                break;
+
+        
+            }
+        }
+
+
 
     }
     class Program
@@ -70,8 +136,10 @@ namespace Test01
                 Console.WriteLine("Ach Junge, gib Float\nBITTE");
                 success = Single.TryParse( Console.ReadLine(), out result);
                 if (success == true){
-                    temp01.changeInitTemperature(result);
+                    temp01.changeInitValues(2, result);
+                    Console.WriteLine("doppelhäää)");
                 }
+
         }
         
     
@@ -88,12 +156,12 @@ namespace Test01
             
             if (input01 == "q"){
                 
-                temp01.changeTemperature(true);
+                temp01.changeTemperature(false);
                 temp01.Result();
                 input01 = Console.ReadLine();
 
             } else if (input01 == "e"){
-                temp01.changeTemperature(false);
+                temp01.changeTemperature(true);
                 temp01.Result();
                 input01 = Console.ReadLine();
             } else{
